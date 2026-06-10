@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop premium streetwear, denim, and seasonal fashion directly from FashionX.">
+  <title>FashionX - Clothing Store</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FashionX</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        <a href="cart.html" class="cart-icon" id="openCart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cart-count">0</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="search-box" id="searchBox">
+    <input type="text" id="searchInput" placeholder="Search products, styles, or brands...">
+  </div>
+
+  <section class="hero" id="home">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">New Season | Summer 2026</span>
+        <h1>Elevate your wardrobe with premium everyday essentials.</h1>
+        <p>Discover curated streetwear, weekend-ready denim, and polished pieces for every occasion.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">Shop Best Sellers</a>
+          <a href="#categories" class="btn btn-secondary">Browse Collections</a>
+        </div>
+        <div class="hero-features">
+          <div><i class="fa-solid fa-truck-fast"></i> Free shipping on orders over ₹1999</div>
+          <div><i class="fa-solid fa-rotate-left"></i> Easy 30-day returns</div>
+          <div><i class="fa-solid fa-award"></i> Premium quality fabrics</div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80"
+          alt="Fashion collection" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <span class="eyebrow">Shop by category</span>
+      <h2>Explore our most popular collections</h2>
+      <p>From everyday essentials to seasonal must-haves, find pieces designed for comfort, style, and versatility.</p>
+    </div>
+    <div class="category-container">
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1517520287167-4bbf64a00d66?auto=format&fit=crop&w=800&q=80"
+          alt="Men collection" loading="lazy" decoding="async">
+        <div class="category-copy">
+          <h3>Men</h3>
+          <p>Tailored fits, layered essentials, and structured outerwear.</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80"
+          alt="Women collection" loading="lazy" decoding="async">
+        <div class="category-copy">
+          <h3>Women</h3>
+          <p>Soft silhouettes, versatile separates, and modern prints.</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80"
+          alt="T-shirts collection" loading="lazy" decoding="async">
+        <div class="category-copy">
+          <h3>T-Shirts</h3>
+          <p>Classic staples and statement tees for every season.</p>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80"
+          alt="Accessories collection" loading="lazy" decoding="async">
+        <div class="category-copy">
+          <h3>Accessories</h3>
+          <p>Finishing touches for a polished look.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <div class="section-header">
+      <span class="eyebrow">Season highlights</span>
+      <h2>Featured products</h2>
+      <p>Shop our selected collection of everyday essentials with premium details and effortless style.</p>
+    </div>
+
+    <div class="product-container">
+      <div class="product-card" data-category="men">
+        <div class="product-badge">Best seller</div>
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80"
+          alt="Denim Jacket" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Denim Jacket</h3>
+          <p class="price">₹1,999</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.8</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="women">
+        <div class="product-badge badge-new">New</div>
+        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80"
+          alt="Black Satin Tee" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Black Satin Tee</h3>
+          <p class="price">₹799</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4.5</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="men">
+        <img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=900&q=80"
+          alt="White Hoodie" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Relaxed Hoodie</h3>
+          <p class="price">₹1,499</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4.3</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="women">
+        <div class="product-badge">Limited</div>
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80"
+          alt="Women Dress" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Floral Midi Dress</h3>
+          <p class="price">₹2,499</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4.6</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="men">
+        <div class="product-badge badge-new">New</div>
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=900&q=80"
+          alt="Cargo Pants" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Utility Cargo Pants</h3>
+          <p class="price">₹1,299</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4.4</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="women">
+        <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80"
+          alt="Soft Knit Sweater" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Soft Knit Sweater</h3>
+          <p class="price">₹1,699</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <span>4.7</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="accessories">
+        <div class="product-badge">New</div>
+        <img
+          src="https://maverickandco.co/cdn/shop/files/maverick-co-vista-waterproof-weekender-black-13.jpg?v=1754464299&width=1080"
+          alt="Waterproof Weekender" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Waterproof Weekender</h3>
+          <p class="price">₹2,299</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4.6</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card" data-category="women">
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80"
+          alt="Linen Shirt" loading="lazy" decoding="async">
+        <div class="product-copy">
+          <h3>Linen Button-Up Shirt</h3>
+          <p class="price">₹999</p>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>4.4</span>
+          </div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="section-header">
+      <span class="eyebrow">Why choose FashionX</span>
+      <h2>Designed for everyday confidence</h2>
+      <p>Our collections are crafted to balance performance, comfort, and modern aesthetic details.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card">
+        <i class="fa-solid fa-tshirt"></i>
+        <h3>Quality Materials</h3>
+        <p>Premium fabrics and soft finishes that feel great from first wear.</p>
+      </div>
+      <div class="about-card">
+        <i class="fa-solid fa-headset"></i>
+        <h3>Support Every Step</h3>
+        <p>Fast shipping, easy exchanges, and responsive customer care.</p>
+      </div>
+      <div class="about-card">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>Conscious Choices</h3>
+        <p>Mindful design with enduring styles built to last beyond the season.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="section-header">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Questions about your order?</h2>
+      <p>Our team is here to help with styling advice, returns, and shipping updates.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div>
+          <h3>Customer support</h3>
+          <p>Email: support@fashionx.com</p>
+          <p>Phone: +91 98765 43210</p>
+        </div>
+        <div>
+          <h3>Store hours</h3>
+          <p>Mon - Fri: 9AM - 7PM</p>
+          <p>Sat: 10AM - 4PM</p>
+        </div>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your email" required>
+        <textarea placeholder="Write your message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h3>FashionX</h3>
+        <p>Style-driven clothing for modern wardrobes.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#products">Products</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </div>
+      <div>
+        <h3>Join the list</h3>
+        <p>Sign up for exclusive offers and new arrivals.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-secondary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">� 2026 FashionX | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
